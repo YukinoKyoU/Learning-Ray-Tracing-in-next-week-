@@ -1,0 +1,3 @@
+/home/cs18/Desktop/Learning Ray Tracing in next week /2.Motion Blur/build/CMakeFiles/rebuild_cache.dir
+/home/cs18/Desktop/Learning Ray Tracing in next week /2.Motion Blur/build/CMakeFiles/MotionBlur.dir
+/home/cs18/Desktop/Learning Ray Tracing in next week /2.Motion Blur/build/CMakeFiles/edit_cache.dir
