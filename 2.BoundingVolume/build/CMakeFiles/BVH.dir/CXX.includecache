@@ -1,0 +1,112 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/aabb.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/camera.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/color.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/vec3.hpp
+iostream
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/hittable.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/rtweekend.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/aabb.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/hittable_list.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/hittable.hpp
+memory
+-
+vector
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/main.cpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/rtweekend.hpp
+color.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/color.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/hittable_list.hpp
+sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/sphere.hpp
+camera.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/camera.hpp
+material.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/material.hpp
+moving_sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/moving_sphere.hpp
+iostream
+-
+stb_image_write.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/stb_image_write.h
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/material.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/moving_sphere.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/hittable.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/rtweekend.hpp
+cmath
+-
+limits
+-
+memory
+-
+cstdlib
+-
+ray.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/sphere.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/hittable.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/stb_image_write.h
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+assert.h
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/vec3.hpp
+cmath
+-
+iostream
+-
+
