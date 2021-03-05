@@ -30,11 +30,13 @@ class moving_sphere : public hittable{
 };
 
 //球心在time0到time1时间段内从center0线性运动到center1
+//在该时间间隔之外，它会继续进行，这些时间无需与相机光圈的打开和关闭相匹配。
 point3 moving_sphere::center(double time) const{
     return center0 + ((time - time0)/(time1 - time0)) * (center1 - center0);
 }
 
 bool moving_sphere::hit(const ray& r, double t_min, double t_max, hit_record& rec) const {
+    //某时刻球心的位置
     vec3 oc = r.origin() - center(r.time());
 
     //t^2*b*b + 2*t*b*(A-C) + (A-C)*(A-C) - r^2 = 0
@@ -58,7 +60,7 @@ bool moving_sphere::hit(const ray& r, double t_min, double t_max, hit_record& re
     rec.t = root;
     //交点
     rec.p = r.at(rec.t);
-    //获取到法线
+    //获取到此时球心所在位置的法线
     vec3 outward_normal = (rec.p - center(r.time())) / radius;
     //设置我们想要的表面法线，即法线始终指向射线
     rec.set_face_normal(r, outward_normal);

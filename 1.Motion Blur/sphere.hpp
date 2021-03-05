@@ -33,41 +33,23 @@ bool sphere::hit(const ray&r, double t_min, double t_max, hit_record& rec) const
 
     auto root = (-half_b - sqrtd) / a;
     //在有交点的情况下，选取较近的交点。
-    if (discriminant > 0) {
-        auto root = sqrt(discriminant);
-        auto temp = (-half_b - root) / a;
-        if (temp < t_max && temp > t_min) {
-            rec.t = temp;
-
-            //交点
-            rec.p = r.at(rec.t);
-            //获取到法线
-            vec3 outward_normal = (rec.p - center) / radius;
-            //设置我们想要的表面法线，即法线始终指向射线
-            rec.set_face_normal(r, outward_normal);
-
-            //材质指针
-            rec.mat_ptr = mat_ptr;
-
-            return true;
-        }
-        temp = (-half_b + root) / a;
-        if (temp < t_max && temp > t_min) {
-            rec.t = temp;
-
-            //交点
-            rec.p = r.at(rec.t);
-            //获取到法线
-            vec3 outward_normal = (rec.p - center) / radius;
-            //设置我们想要的表面法线，即法线始终指向射线
-            rec.set_face_normal(r, outward_normal);
-
-            //材质指针
-            rec.mat_ptr = mat_ptr;
-
-            return true;
-        }
+    if(root < t_min || t_max < root){
+        root = (-half_b + sqrtd) / a;
+        if(root < t_min || t_max < root)
+            return false;
     }
-    return false;
+
+    rec.t = root;
+    //交点
+    rec.p = r.at(rec.t);
+    //获取到此时球心所在位置的法线
+    vec3 outward_normal = (rec.p - center) / radius;
+    //设置我们想要的表面法线，即法线始终指向射线
+    rec.set_face_normal(r, outward_normal);
+
+    //材质指针
+    rec.mat_ptr = mat_ptr;
+
+    return true;
 }
 #endif

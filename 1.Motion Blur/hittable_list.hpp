@@ -45,10 +45,12 @@ bool hittable_list:: hit(const ray&r, double t_min, double t_max, hit_record&rec
     //刚开始可以看到无线远
     auto closest_so_far = t_max;
 
+    //遍历碰撞物体集合中的各个物体
     for(const auto& object : objects){
+        //如果光线和物体发生碰撞并且返回真
         if(object->hit(r, t_min, closest_so_far, temp_rec)){
             hit_anything = true;
-            //将上一次的最近撞击点作为视线可达最远处
+            //则将上一次的最近撞击点作为视线可达最远处
             closest_so_far = temp_rec.t;
             rec = temp_rec;
         }
