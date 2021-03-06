@@ -3,6 +3,7 @@
 
 CMakeFiles/BVH.dir/main.cpp.o
  /home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/aabb.hpp
+ /home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/bvh.hpp
  /home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/camera.hpp
  /home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/color.hpp
  /home/cs18/Desktop/Learning Ray Tracing in next week/2.BoundingVolume/hittable.hpp

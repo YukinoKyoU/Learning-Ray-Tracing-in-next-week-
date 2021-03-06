@@ -6,6 +6,7 @@
 #include "camera.hpp"
 #include "material.hpp"
 #include "moving_sphere.hpp"
+#include "bvh.hpp"
 
 #include <iostream>
 
@@ -58,11 +59,11 @@ hittable_list random_scene(){
     auto material3 = make_shared<metal>(color(0.7, 0.6, 0.5), 0.0);
     world.add(make_shared<sphere>(point3(4, 1, 0), 1.0, material3));
 
-    return world;
+    return hittable_list(make_shared<bvh_node>(world, 0.0, 1.0));
 }
 
 
-color ray_color(const ray&r, const hittable&world, int depth) {
+color ray_color(const ray&r, const hittable& world, int depth) {
     hit_record rec;
     //递归深度
     if(depth <= 0){
@@ -93,7 +94,7 @@ int main(){
     const int max_depth = 50;
 
     //设置场景
-    auto world = random_scene();
+    auto world1 = random_scene();
 
     //设置相机
     point3 lookfrom(13, 2, 3);
@@ -118,7 +119,7 @@ int main(){
                 auto u = (i + random_double()) / (image_width - 1);
                 auto v = (j + random_double()) / (image_height - 1);
                 ray r = cam.get_ray(u, v);
-                pixel_color += ray_color(r, world, max_depth);
+                pixel_color += ray_color(r, world1, max_depth);
             }
             write_color(data, image_width, image_height, i, j, pixel_color, samples_per_pixel);  
         }

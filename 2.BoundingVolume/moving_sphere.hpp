@@ -4,11 +4,12 @@
 #include "rtweekend.hpp"
 
 #include "hittable.hpp"
+#include "aabb.hpp"
 
 //移动的球类
 class moving_sphere : public hittable{
     public:
-        moving_sphere(){};
+        moving_sphere();
         moving_sphere(
             point3 cen0, point3 cen1, double _time0, double _time1, double r, shared_ptr<material>m):
             center0(cen0), center1(cen1), time0(_time0), time1(_time1), radius(r), mat_ptr(m)
@@ -85,6 +86,7 @@ bool moving_sphere::bounding_box(double _time0, double _time1, aabb& output_box)
         center(_time1) - vec3(radius, radius, radius),
         center(_time1) + vec3(radius, radius, radius)
     );
+    //将两个时刻的盒子放进一个大盒子里
     output_box = surrounding_box(box0, box1);
     return true;
 }

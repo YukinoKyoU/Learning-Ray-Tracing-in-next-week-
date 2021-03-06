@@ -6,7 +6,7 @@
 
 class sphere : public hittable {
     public:
-        sphere() {};
+        sphere() ;
         sphere(const point3& cen, const double r, shared_ptr<material> m)
                 : center(cen), radius(r), mat_ptr(m){};
 

@@ -11,14 +11,16 @@ class aabb{
             maximum = b;
         }
 
-        point3 min(){
+        point3 min() const {
             return minimum;
         }
-        point3 max(){
+        point3 max() const {
             return maximum;
         }
 
-        bool hit(const ray& r, double t_enter, double t_exit) const;
+    
+    bool hit(const ray&r, double t_enter, double t_exit) const;
+        
 
     public:
         //包围盒的射入边界和射出边界
@@ -48,7 +50,7 @@ inline bool aabb::hit(const ray&r, double t_enter, double t_exit) const {
         t_exit = t1 < t_exit ? t1 : t_exit;
         
         //射入的时间最大值 小于 射出的时间的最小值，则光线和区域一定有交点
-        if(t_enter <= t_exit)
+        if(t_exit <= t_enter)
             return false;
     }
     return true;

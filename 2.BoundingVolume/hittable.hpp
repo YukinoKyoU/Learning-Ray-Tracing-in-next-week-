@@ -34,7 +34,7 @@ class hittable{
         //计算包裹着hittable类的包围盒
         //物体会动，需要接收time0和time1参数，把这个时间区内的运动物体完整包起来
         //返回bool（不是所有的图元都有包围盒）
-        virtual bool bounding_box(double time0, double time1, aabb& output_box) const = 0;
+        virtual bool bounding_box(double time0, double time1, aabb& output_box) const = 0 ;
 };
 
 

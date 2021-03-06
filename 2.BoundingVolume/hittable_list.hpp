@@ -2,6 +2,7 @@
 #define HITTABLE_LIST_H
 
 #include "hittable.hpp"
+#include "aabb.hpp"
 
 #include <memory>
 #include <vector>
@@ -39,11 +40,11 @@ class hittable_list: public hittable{
         std::vector<shared_ptr<hittable>> objects;
 };
 
-bool hittable_list:: hit(const ray&r, double t_min, double t_max, hit_record&rec) const{
+bool hittable_list::hit(const ray&r, double t_min, double t_max, hit_record&rec) const{
 
     hit_record temp_rec;
     bool hit_anything = false;
-    //刚开始可以看到无线远
+    //刚开始可以看到无限远
     auto closest_so_far = t_max;
 
     //遍历碰撞物体集合中的各个物体
@@ -76,10 +77,5 @@ bool hittable_list::bounding_box(double time0, double time1, aabb& output_box) c
     }
     return true;
 }
-
-
-
-
-
 
 #endif
