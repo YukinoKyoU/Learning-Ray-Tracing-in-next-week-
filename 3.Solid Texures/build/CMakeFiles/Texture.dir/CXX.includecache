@@ -1,0 +1,134 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/aabb.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/bvh.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/hittable.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/hittable_list.hpp
+algorithm
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/camera.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/color.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/vec3.hpp
+iostream
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/hittable.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/rtweekend.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/aabb.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/hittable_list.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/hittable.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/aabb.hpp
+memory
+-
+vector
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/main.cpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/rtweekend.hpp
+color.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/color.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/hittable_list.hpp
+sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/sphere.hpp
+camera.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/camera.hpp
+material.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/material.hpp
+moving_sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/moving_sphere.hpp
+bvh.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/bvh.hpp
+iostream
+-
+stb_image_write.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/stb_image_write.h
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/material.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/rtweekend.hpp
+texture.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/texture.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/moving_sphere.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/hittable.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/aabb.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/rtweekend.hpp
+cmath
+-
+limits
+-
+memory
+-
+cstdlib
+-
+ray.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/sphere.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/hittable.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/stb_image_write.h
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+assert.h
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/texture.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/vec3.hpp
+cmath
+-
+iostream
+-
+

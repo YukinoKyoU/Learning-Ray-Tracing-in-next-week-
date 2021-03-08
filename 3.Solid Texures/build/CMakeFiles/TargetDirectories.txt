@@ -1,0 +1,3 @@
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/build/CMakeFiles/rebuild_cache.dir
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/build/CMakeFiles/Texture.dir
+/home/cs18/Desktop/Learning Ray Tracing in next week/3.Solid Texures/build/CMakeFiles/edit_cache.dir
