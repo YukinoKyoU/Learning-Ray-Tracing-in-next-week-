@@ -13,6 +13,19 @@
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 
+//创建两个球的场景
+hittable_list two_spheres(){
+    hittable_list objects;
+
+    auto checker = make_shared<checker_texture>(color(0.2, 0.3, 0.1), color(0.9, 0.9, 0.9));
+
+    objects.add(make_shared<sphere>(point3(0, -10, 0), 10, make_shared<lambertian>(checker)));
+    objects.add(make_shared<sphere>(point3(0, 10, 0), 10, make_shared<lambertian>(checker)));
+
+    return hittable_list(make_shared<bvh_node>(objects, 0, 1));
+
+}
+
 hittable_list random_scene(){
     hittable_list world;
 
@@ -94,15 +107,36 @@ int main(){
     const int samples_per_pixel = 100;
     const int max_depth = 50;
 
-    //设置场景
-    auto world1 = random_scene();
+    //设置场景,使用switch语句，以针对给定的运行选择所需的场景
+    hittable_list world;
+
+    point3 lookfrom;
+    point3 lookat;
+    auto vfov = 40.0;
+    auto aperture = 0.0;
+
+    switch (0) {
+        case 1:
+            world = random_scene();
+            lookfrom = point3(13,2,3);
+            lookat = point3(0,0,0);
+            vfov = 20.0;
+            aperture = 0.1;
+            break;
+
+        default:
+            case 2:
+            world = two_spheres();
+            lookfrom = point3(13,2,3);
+            lookat = point3(0,0,0);
+            vfov = 20.0;
+            break;
+}
+
 
     //设置相机
-    point3 lookfrom(13, 2, 3);
-    point3 lookat(0, 0, 0);
     vec3 vup(0, 1, 0);
     auto dist_to_focus = 10.0;
-    auto aperture = 0.1;
 
     //将参数传入相机，
     camera cam(lookfrom, lookat, vup, 20, aspect_ratio, aperture, dist_to_focus, 0.0, 1.0);
@@ -120,12 +154,12 @@ int main(){
                 auto u = (i + random_double()) / (image_width - 1);
                 auto v = (j + random_double()) / (image_height - 1);
                 ray r = cam.get_ray(u, v);
-                pixel_color += ray_color(r, world1, max_depth);
+                pixel_color += ray_color(r, world, max_depth);
             }
             write_color(data, image_width, image_height, i, j, pixel_color, samples_per_pixel);  
         }
     }
 
-    stbi_write_jpg("output.jpg", image_width, image_height, 3, data, 100);
+    stbi_write_jpg("output2.jpg", image_width, image_height, 3, data, 100);
 
 }
