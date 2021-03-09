@@ -18,7 +18,7 @@ hittable_list two_perlin_spheres(){
     hittable_list objects;
 
     //创建指向柏林噪声材质的指针
-    auto pertext = make_shared<noise_texture>();
+    auto pertext = make_shared<noise_texture>(4);
 
     objects.add(make_shared<sphere>(point3(0, -1000, 0), 1000, make_shared<lambertian>(pertext)));
     objects.add(make_shared<sphere>(point3(0, 2, 0), 2, make_shared<lambertian>(pertext)));
@@ -180,6 +180,6 @@ int main(){
         }
     }
 
-    stbi_write_jpg("output_smooth_Hermit.jpg", image_width, image_height, 3, data, 100);
+    stbi_write_jpg("output_randomvec.jpg", image_width, image_height, 3, data, 100);
 
 }
