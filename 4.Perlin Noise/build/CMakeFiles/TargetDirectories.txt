@@ -1,0 +1,3 @@
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/build/CMakeFiles/rebuild_cache.dir
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/build/CMakeFiles/Perlin.dir
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,140 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/aabb.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/bvh.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/hittable.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/hittable_list.hpp
+algorithm
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/camera.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/color.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/vec3.hpp
+iostream
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/hittable.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/rtweekend.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/aabb.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/hittable_list.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/hittable.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/aabb.hpp
+memory
+-
+vector
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/main.cpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/rtweekend.hpp
+color.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/color.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/hittable_list.hpp
+sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/sphere.hpp
+camera.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/camera.hpp
+material.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/material.hpp
+moving_sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/moving_sphere.hpp
+bvh.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/bvh.hpp
+iostream
+-
+stb_image_write.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/stb_image_write.h
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/material.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/rtweekend.hpp
+texture.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/texture.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/moving_sphere.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/hittable.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/aabb.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/perlin.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/rtweekend.hpp
+cmath
+-
+limits
+-
+memory
+-
+cstdlib
+-
+ray.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/sphere.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/hittable.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/stb_image_write.h
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+assert.h
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/texture.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/rtweekend.hpp
+perlin.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/perlin.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/4.Perlin Noise/vec3.hpp
+cmath
+-
+iostream
+-
+
