@@ -180,6 +180,6 @@ int main(){
         }
     }
 
-    stbi_write_jpg("output_frequence.jpg", image_width, image_height, 3, data, 100);
+    stbi_write_jpg("output_randomvec.jpg", image_width, image_height, 3, data, 100);
 
 }
