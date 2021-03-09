@@ -61,8 +61,8 @@ class noise_texture : public texture {
         noise_texture(double sc) : scale(sc) {}
 
         virtual color value(double u, double v, const point3& p) const override{
-            //用turb函数替代noise函数
-            return color(1, 1, 1) * noise.turb(scale * p);
+            //让颜色与sin函数的值成比例，并使用扰动函数去调整相位，使得带状条纹有起伏
+            return color(1, 1, 1) * 0.5 * (1 + sin(scale * p.z() + 10 * noise.turb(p)));
         }
 
     private:
