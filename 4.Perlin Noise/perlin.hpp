@@ -24,6 +24,21 @@ class perlin {
             delete [] perm_z;
 
         }
+        //使用多个频率相加得到复合噪声，也被称为turbulence
+        double turb(const point3& p, int depth = 7) const{
+            auto accum = 0.0;
+            auto temp_p = p;
+            auto weight = 1.0;
+
+            for (int i = 0; i < depth; i++) {
+                accum += weight*noise(temp_p);
+                weight *= 0.5;
+                temp_p *= 2;
+            }
+
+            return fabs(accum);
+        }
+
         //用位与和位异或运算符完成随机
         double noise(const point3& p) const{
 

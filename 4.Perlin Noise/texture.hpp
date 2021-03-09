@@ -61,8 +61,8 @@ class noise_texture : public texture {
         noise_texture(double sc) : scale(sc) {}
 
         virtual color value(double u, double v, const point3& p) const override{
-            //将输出结果映射到[0,1]，防止负数的产生
-            return color(1, 1, 1) * 0.5 *(1 + noise.noise(scale * p));
+            //用turb函数替代noise函数
+            return color(1, 1, 1) * noise.turb(scale * p);
         }
 
     private:
