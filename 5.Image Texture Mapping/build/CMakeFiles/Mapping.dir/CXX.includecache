@@ -1,0 +1,174 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/aabb.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/bvh.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/hittable.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/hittable_list.hpp
+algorithm
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/camera.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/color.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/vec3.hpp
+iostream
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/hittable.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/rtweekend.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/aabb.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/hittable_list.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/hittable.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/aabb.hpp
+memory
+-
+vector
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/main.cpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/rtweekend.hpp
+color.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/color.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/hittable_list.hpp
+sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/sphere.hpp
+camera.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/camera.hpp
+material.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/material.hpp
+moving_sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/moving_sphere.hpp
+bvh.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/bvh.hpp
+iostream
+-
+stb_image_write.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/stb_image_write.h
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/material.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/rtweekend.hpp
+texture.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/texture.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/moving_sphere.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/hittable.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/aabb.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/perlin.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/rtweekend.hpp
+cmath
+-
+limits
+-
+memory
+-
+cstdlib
+-
+ray.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/sphere.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/hittable.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/stb_image.h
+stb_image.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/stb_image.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/stb_image_write.h
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+assert.h
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/texture.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/rtweekend.hpp
+perlin.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/perlin.hpp
+stb_image.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/stb_image.h
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/5.Image Texture Mapping/vec3.hpp
+cmath
+-
+iostream
+-
+
