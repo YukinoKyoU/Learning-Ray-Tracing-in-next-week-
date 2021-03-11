@@ -14,6 +14,24 @@
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 
+//Cornell盒子场景
+hittable_list cornell_box() {
+    hittable_list objects;
+
+    auto red   = make_shared<lambertian>(color(.65, .05, .05));
+    auto white = make_shared<lambertian>(color(.73, .73, .73));
+    auto green = make_shared<lambertian>(color(.12, .45, .15));
+    auto light = make_shared<diffuse_light>(color(15, 15, 15));
+
+    objects.add(make_shared<yz_rect>(0, 555, 0, 555, 555, green));
+    objects.add(make_shared<yz_rect>(0, 555, 0, 555, 0, red));
+    objects.add(make_shared<xz_rect>(213, 343, 227, 332, 554, light));
+    objects.add(make_shared<xz_rect>(0, 555, 0, 555, 0, white));
+    objects.add(make_shared<xz_rect>(0, 555, 0, 555, 555, white));
+    objects.add(make_shared<xy_rect>(0, 555, 0, 555, 555, white));
+
+    return hittable_list(objects);
+}
 //矩形光源场景
 hittable_list simple_light() {
     hittable_list objects;
@@ -25,7 +43,7 @@ hittable_list simple_light() {
     auto difflight = make_shared<diffuse_light>(color(4,4,4));
     objects.add(make_shared<xy_rect>(3, 5, 1, 3, -2, difflight));
 
-    return objects;
+    return hittable_list(objects);
 }
 
 //地球贴图场景
@@ -134,17 +152,16 @@ color ray_color(const ray&r, const color& background, const hittable& world, int
     if(!rec.mat_ptr->scatter(r, rec, attenuation, scattered))
         return emitted;
 
-    //以反射后的光线进行递归
+    //光源 + 以反射后的光线进行递归
     return emitted + attenuation * ray_color(scattered, background, world, depth-1);
 
 }
 
 int main(){
     //设置图像参数
-    const auto aspect_ratio = 16.0 / 9.0;
-    const int image_width = 400;
-    const int image_height = static_cast<int> (image_width / aspect_ratio);
-    const int samples_per_pixel = 400;
+    auto aspect_ratio = 16.0 / 9.0;
+    int image_width = 400;
+    int samples_per_pixel = 100;
     const int max_depth = 50;
 
     //设置场景,使用switch语句，以针对给定的运行选择所需的场景
@@ -190,13 +207,25 @@ int main(){
             vfov = 20.0;
             break;
 
-        default:
         case 5:
             world = simple_light();
+            samples_per_pixel = 400;
             background = color(0,0,0);
             lookfrom = point3(26,3,6);
             lookat = point3(0,2,0);
             vfov = 20.0;
+            break;
+
+        default:
+        case 6:
+            world = cornell_box();
+            aspect_ratio = 1.0;
+            image_width = 600;
+            samples_per_pixel = 200;
+            background = color(0,0,0);
+            lookfrom = point3(278, 278, -800);
+            lookat = point3(278, 278, 0);
+            vfov = 40.0;
             break;
     }
 
@@ -204,9 +233,10 @@ int main(){
     //设置相机
     vec3 vup(0, 1, 0);
     auto dist_to_focus = 10.0;
+    int image_height = static_cast<int> (image_width / aspect_ratio);
 
     //将参数传入相机，
-    camera cam(lookfrom, lookat, vup, 20, aspect_ratio, aperture, dist_to_focus, 0.0, 1.0);
+    camera cam(lookfrom, lookat, vup, vfov, aspect_ratio, aperture, dist_to_focus, 0.0, 1.0);
 
     //渲染
     unsigned char* data = new unsigned char[image_width * image_height * 3];
@@ -227,6 +257,6 @@ int main(){
         }
     }
 
-    stbi_write_jpg("output_blackground.jpg", image_width, image_height, 3, data, 100);
+    stbi_write_jpg("output_Cornell.jpg", image_width, image_height, 3, data, 100);
 
 }
