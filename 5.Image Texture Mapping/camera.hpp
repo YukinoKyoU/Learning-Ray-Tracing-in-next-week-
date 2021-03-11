@@ -18,8 +18,8 @@ class camera{
             
             auto theta = degrees_to_radians(vfov);
             auto half_h = tan(theta/2) * focus_dist;        //屏幕半高=焦距 × tan（垂直视角/2）
-            auto viewport_height = 2.0 * half_h;
-            auto viewport_width = aspect_ratio * viewport_height;
+            auto viewport_height = 2.0 * half_h;            //屏幕总高
+            auto viewport_width = aspect_ratio * viewport_height;   //屏幕总宽
 
             //定义摄像机的坐标系
             w = unit_vector(lookfrom - lookat);

@@ -29,7 +29,7 @@ class bvh_node : public hittable{
         aabb box;
 };
 
-//sort（）使用的比较函数。先判断是哪个轴，然后对应为比较器赋值
+//sort（）使用的比较函数。先判断是哪个轴，然后按对应轴升序排列
 inline bool box_compare(const shared_ptr<hittable> a, const shared_ptr<hittable> b, int axis){
     aabb box_a;
     aabb box_b;
@@ -61,6 +61,7 @@ bvh_node::bvh_node(
 
         //随机选取一个轴
         int axis = random_int(0,2);
+        //comparator为函数指针
         auto comparator = (axis == 0) ? box_x_compare
                          :(axis == 1) ? box_y_compare
                                       : box_z_compare;
