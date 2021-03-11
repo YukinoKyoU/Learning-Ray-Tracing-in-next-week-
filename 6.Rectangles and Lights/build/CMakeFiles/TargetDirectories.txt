@@ -1,0 +1,3 @@
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/build/CMakeFiles/rebuild_cache.dir
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/build/CMakeFiles/Light.dir
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/build/CMakeFiles/edit_cache.dir

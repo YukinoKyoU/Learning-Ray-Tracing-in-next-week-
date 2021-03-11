@@ -1,0 +1,182 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/aabb.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/aarect.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/hittable.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/bvh.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/hittable.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/hittable_list.hpp
+algorithm
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/camera.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/color.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/vec3.hpp
+iostream
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/hittable.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/rtweekend.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/aabb.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/hittable_list.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/hittable.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/aabb.hpp
+memory
+-
+vector
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/main.cpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/rtweekend.hpp
+color.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/color.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/hittable_list.hpp
+sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/sphere.hpp
+camera.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/camera.hpp
+material.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/material.hpp
+moving_sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/moving_sphere.hpp
+bvh.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/bvh.hpp
+aarect.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/aarect.hpp
+iostream
+-
+stb_image_write.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/stb_image_write.h
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/material.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/rtweekend.hpp
+texture.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/texture.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/moving_sphere.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/hittable.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/aabb.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/perlin.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/rtweekend.hpp
+cmath
+-
+limits
+-
+memory
+-
+cstdlib
+-
+ray.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/sphere.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/hittable.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/stb_image.h
+stb_image.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/stb_image.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/stb_image_write.h
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+assert.h
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/texture.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/rtweekend.hpp
+perlin.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/perlin.hpp
+stb_image.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/stb_image.h
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/6.Rectangles and Lights/vec3.hpp
+cmath
+-
+iostream
+-
+

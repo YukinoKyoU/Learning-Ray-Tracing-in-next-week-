@@ -7,12 +7,26 @@
 #include "material.hpp"
 #include "moving_sphere.hpp"
 #include "bvh.hpp"
+#include "aarect.hpp"
 
 #include <iostream>
 
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 
+//矩形光源场景
+hittable_list simple_light() {
+    hittable_list objects;
+
+    auto pertext = make_shared<noise_texture>(4);
+    objects.add(make_shared<sphere>(point3(0,-1000,0), 1000, make_shared<lambertian>(pertext)));
+    objects.add(make_shared<sphere>(point3(0,2,0), 2, make_shared<lambertian>(pertext)));
+
+    auto difflight = make_shared<diffuse_light>(color(4,4,4));
+    objects.add(make_shared<xy_rect>(3, 5, 1, 3, -2, difflight));
+
+    return objects;
+}
 
 //地球贴图场景
 hittable_list earth() {
@@ -101,26 +115,28 @@ hittable_list random_scene(){
 }
 
 
-color ray_color(const ray&r, const hittable& world, int depth) {
+color ray_color(const ray&r, const color& background, const hittable& world, int depth) {
     hit_record rec;
     //递归深度
     if(depth <= 0){
         return color(0, 0, 0);
     }
 
-    if(world.hit(r, 0.001, infinity, rec)){
-        ray scattered;
-        color attenuation;
-        //如果发生了漫反射或者全反射
-        if(rec.mat_ptr->scatter(r, rec, attenuation, scattered))
-            //以反射后的光线进行递归
-            return attenuation * ray_color(scattered, world, depth-1);
-        return color(0, 0, 0);
-    }
+    //如果光线没打到任何物体，则返回背景
+    if(!world.hit(r, 0.001, infinity, rec))
+        return background;
 
-    vec3 unit_direction = unit_vector(r.direction());
-    auto t = 0.5*(unit_direction.y() + 1.0);
-    return (1.0 - t) * color(1.0, 1.0, 1.0) + t * color(0.5, 0.7, 1.0);
+    ray scattered;
+    color attenuation;
+    color emitted = rec.mat_ptr->emitted(rec.u, rec.v, rec.p);
+
+    //如果scatter是false，说明为光源体
+    if(!rec.mat_ptr->scatter(r, rec, attenuation, scattered))
+        return emitted;
+
+    //以反射后的光线进行递归
+    return emitted + attenuation * ray_color(scattered, background, world, depth-1);
+
 }
 
 int main(){
@@ -128,7 +144,7 @@ int main(){
     const auto aspect_ratio = 16.0 / 9.0;
     const int image_width = 400;
     const int image_height = static_cast<int> (image_width / aspect_ratio);
-    const int samples_per_pixel = 100;
+    const int samples_per_pixel = 400;
     const int max_depth = 50;
 
     //设置场景,使用switch语句，以针对给定的运行选择所需的场景
@@ -138,10 +154,12 @@ int main(){
     point3 lookat;
     auto vfov = 40.0;
     auto aperture = 0.0;
+    color background(0, 0, 0);
 
     switch (0) {
         case 1:
             world = random_scene();
+            background = color(0.70, 0.80, 1.00);
             lookfrom = point3(13,2,3);
             lookat = point3(0,0,0);
             vfov = 20.0;
@@ -150,6 +168,7 @@ int main(){
 
         case 2:
             world = two_spheres();
+            background = color(0.70, 0.80, 1.00);
             lookfrom = point3(13,2,3);
             lookat = point3(0,0,0);
             vfov = 20.0;
@@ -157,16 +176,26 @@ int main(){
 
         case 3:
             world = two_perlin_spheres();
+            background = color(0.70, 0.80, 1.00);
+            lookfrom = point3(13,2,3);
+            lookat = point3(0,0,0);
+            vfov = 20.0;
+            break;
+
+        case 4:
+            world = earth();
+            background = color(0.70, 0.80, 1.00);
             lookfrom = point3(13,2,3);
             lookat = point3(0,0,0);
             vfov = 20.0;
             break;
 
         default:
-        case 4:
-            world = earth();
-            lookfrom = point3(13,2,3);
-            lookat = point3(0,0,0);
+        case 5:
+            world = simple_light();
+            background = color(0,0,0);
+            lookfrom = point3(26,3,6);
+            lookat = point3(0,2,0);
             vfov = 20.0;
             break;
     }
@@ -192,12 +221,12 @@ int main(){
                 auto u = (i + random_double()) / (image_width - 1);
                 auto v = (j + random_double()) / (image_height - 1);
                 ray r = cam.get_ray(u, v);
-                pixel_color += ray_color(r, world, max_depth);
+                pixel_color += ray_color(r, background, world, max_depth);
             }
             write_color(data, image_width, image_height, i, j, pixel_color, samples_per_pixel);  
         }
     }
 
-    stbi_write_jpg("output.jpg", image_width, image_height, 3, data, 100);
+    stbi_write_jpg("output_blackground.jpg", image_width, image_height, 3, data, 100);
 
 }

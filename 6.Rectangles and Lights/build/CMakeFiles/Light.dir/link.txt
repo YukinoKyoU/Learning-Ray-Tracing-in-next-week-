@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Light.dir/main.cpp.o  -o Light 
