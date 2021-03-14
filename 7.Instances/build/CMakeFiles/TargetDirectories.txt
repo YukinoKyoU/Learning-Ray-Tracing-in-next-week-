@@ -1,0 +1,3 @@
+/home/cs18/Desktop/Learning Ray Tracing in next week/7.Instances/build/CMakeFiles/rebuild_cache.dir
+/home/cs18/Desktop/Learning Ray Tracing in next week/7.Instances/build/CMakeFiles/Instances.dir
+/home/cs18/Desktop/Learning Ray Tracing in next week/7.Instances/build/CMakeFiles/edit_cache.dir
