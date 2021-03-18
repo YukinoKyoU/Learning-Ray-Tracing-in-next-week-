@@ -1,0 +1,210 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/aabb.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/aarect.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/hittable.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/box.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/hittable_list.hpp
+aarect.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/aarect.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/bvh.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/hittable.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/hittable_list.hpp
+algorithm
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/camera.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/color.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/vec3.hpp
+iostream
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/constant_medium.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/hittable.hpp
+material.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/material.hpp
+texture.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/texture.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/hittable.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/aabb.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/hittable_list.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/hittable.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/aabb.hpp
+memory
+-
+vector
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/main.cpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+color.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/color.hpp
+hittable_list.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/hittable_list.hpp
+sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/sphere.hpp
+camera.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/camera.hpp
+material.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/material.hpp
+moving_sphere.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/moving_sphere.hpp
+bvh.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/bvh.hpp
+aarect.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/aarect.hpp
+box.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/box.hpp
+constant_medium.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/constant_medium.hpp
+iostream
+-
+chrono
+-
+iomanip
+-
+omp.h
+-
+stb_image_write.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/stb_image_write.h
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/material.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+texture.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/texture.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/moving_sphere.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/hittable.hpp
+aabb.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/aabb.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/perlin.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+cmath
+-
+limits
+-
+memory
+-
+cstdlib
+-
+ray.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/ray.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/sphere.hpp
+hittable.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/hittable.hpp
+vec3.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/vec3.hpp
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/stb_image.h
+stb_image.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/stb_image.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/stb_image_write.h
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+assert.h
+-
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/texture.hpp
+rtweekend.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/rtweekend.hpp
+perlin.hpp
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/perlin.hpp
+stb_image.h
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/stb_image.h
+
+/home/cs18/Desktop/Learning Ray Tracing in next week/8.Volumes/vec3.hpp
+cmath
+-
+iostream
+-
+
